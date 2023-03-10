@@ -8,12 +8,12 @@ User specify the number of consumer by using the first input argument called "nt
 
 Input commands either from file or keyboard. Two commands are:
 
-  T <n> 
+  T < n > 
     Execute a transaction with integer parameter n, with n > 0. There is a routine
     that gets called for each transaction: void Trans(int n). The parameter n is
     used by Trans to determine how long to simulate the execution of the transaction.
     
-  S <n> The sleep command simulates having the producer wait between receiving new
+  S < n > The sleep command simulates having the producer wait between receiving new
     transactions to process. The producer sleeps for a time determined by integer
     parameter n, with n taking on values 1..100. There is a routine that gets called for
     each sleep request: void Sleep(int n).
